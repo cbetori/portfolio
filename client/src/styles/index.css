@@ -1,0 +1,63 @@
+body {
+	overflow-x: hidden;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+#github {
+	background-image: url('./images/footer/git.png');
+	background-size: cover;
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+}
+
+#linkedin {
+	background-image: url('./images/footer/lin.png');
+	background-size: cover;
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+}
+
+#insta {
+	background-image: url('./images/footer/insta.png');
+	background-size: cover;
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+}
+
+/*Content Images*/
+#about {
+	background-image: url('./images/mountain.jpg');
+	background-size: cover;
+	background-position-x: center;
+	background-repeat: no-repeat;
+}
+
+#projects {
+}
+
+#project-db {
+	background-image: url('./images/projects/dashboard.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 69vh;
+	width: 85vw;
+}
+
+#project-pdf {
+	background-image: url('./images/projects/pdfmerger.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 26vh;
+	width: 65vw;
+}
