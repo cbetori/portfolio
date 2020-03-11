@@ -1,63 +1,239 @@
 body {
-	overflow-x: hidden;
-	margin: 0;
-	font-family: 'Josefin Sans', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
 }
 
 #github {
-	background-image: url('./images/footer/git.png');
-	background-size: cover;
-	height: 20px;
-	width: 20px;
-	margin-right: 10px;
+    background-image: url('./images/footer/git.png');
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
 }
 
 #linkedin {
-	background-image: url('./images/footer/lin.png');
-	background-size: cover;
-	height: 20px;
-	width: 20px;
-	margin-right: 10px;
+    background-image: url('./images/footer/lin.png');
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
 }
 
 #insta {
-	background-image: url('./images/footer/insta.png');
-	background-size: cover;
-	height: 20px;
-	width: 20px;
-	margin-right: 10px;
+    background-image: url('./images/footer/insta.png');
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
 }
 
 /*Content Images*/
 #about {
-	background-image: url('./images/mountain.jpg');
-	background-size: cover;
-	background-position-x: center;
-	background-repeat: no-repeat;
+    background-image: url('./images/mountain.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
 }
 
 #projects {
+    position: relative;
 }
 
 #project-db {
-	background-image: url('./images/projects/dashboard.png');
-	background-repeat: no-repeat;
-	background-size: contain;
-	height: 69vh;
-	width: 85vw;
+    background-image: url('./images/projects/dashboard.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 80vh;
+    width: 80vw;
 }
 
 #project-pdf {
-	background-image: url('./images/projects/pdfmerger.png');
-	background-repeat: no-repeat;
-	background-size: contain;
-	height: 26vh;
-	width: 65vw;
+    background-image: url('./images/projects/pdfmerger.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 26vh;
+    width: auto;
+}
+
+#cover-page {
+    position: absolute;
+    background-color: #00539cff;
+    height: 100vh;
+    width: 100%;
+    -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 0.1%, 0 100%);
+    clip-path: polygon(140% 0, 0 0, 0 0, 0 100%);
+    -webkit-animation: slide-small-bluel 3s forwards;
+    -webkit-animation-delay: 3s;
+    animation: slide-small-blue 3s forwards;
+    animation-delay: 3s;
+}
+#cover-wrapper {
+    position: absolute;
+    background-color: #eea47fff;
+    height: 100vh;
+    width: 100%;
+    -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 0.1%, 0 0);
+    clip-path: polygon(145% 0, 0 0, 0 0, 0 105%);
+    -webkit-animation: slide-small-orange 3s forwards;
+    -webkit-animation-delay: 6s;
+    animation: slide-small-orange 3s forwards;
+    animation-delay: 6s;
+}
+
+@keyframes slide-small-blue {
+    100% {
+        clip-path: polygon(5% 0, 0 0, 0 0, 0 5%);
+    }
+}
+
+@keyframes slide-small-orange {
+    100% {
+        clip-path: polygon(6% 0, 0 0, 0 0, 0 6%);
+    }
+}
+
+@-webkit-keyframes slide-small-blue {
+    100% {
+        clip-path: polygon(5% 0, 0 0, 0 0, 0 5%);
+    }
+}
+
+@-webkit-keyframes slide-small-orange {
+    100% {
+        clip-path: polygon(6% 0, 0 0, 0 0, 0 6%);
+    }
+}
+
+#cover-full-f {
+    margin-top: 15vw;
+    margin-left: -100vw;
+    -webkit-animation: full-f 3s forwards;
+    -webkit-animation-delay: 0s;
+    animation: full-f 3s forwards;
+    animation-delay: 0s;
+}
+
+@keyframes full-f {
+    100% {
+        margin-left: 35vw;
+    }
+}
+
+@-webkit-keyframes full-f {
+    100% {
+        margin-left: 35vw;
+    }
+}
+
+#cover-full-u {
+    margin-top: -100vw;
+    -webkit-animation: full-u 3s forwards;
+    -webkit-animation-delay: 0s;
+    animation: full-u 3s forwards;
+    animation-delay: 0s;
+}
+
+@keyframes full-u {
+    100% {
+        margin-top: 15vw;
+    }
+}
+
+@-webkit-keyframes full-u {
+    100% {
+        margin-top: 15vw;
+    }
+}
+
+#cover-full-ll {
+    margin-top: 15vw;
+    animation: full-ll ease 3s;
+    animation-delay: 0s;
+    -webkit-animation: full-ll ease 3s;
+    -webkit-animation-delay: 0s;
+}
+
+@keyframes full-ll {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes full-ll {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#cover-stack {
+    margin-top: 100vh;
+    -webkit-animation: full-stack 3s forwards;
+    -webkit-animation-delay: 0s;
+    animation: full-stack 3s forwards;
+    animation-delay: 0s;
+}
+
+@keyframes full-stack {
+    100% {
+        margin-top: 0;
+    }
+}
+
+@keyframes full-stack {
+    100% {
+        margin-top: 0;
+    }
+}
+
+#cover-dev {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 1.5s steps(40, end), blink-caret 0.5s step-end infinite;
+    animation-delay: 3.5s;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
 }
