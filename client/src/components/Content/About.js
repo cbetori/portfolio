@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import { setStylesClass } from '../../utilities/utilities'
 import Content from '../Content'
 import Header from '../Content/Header'
 

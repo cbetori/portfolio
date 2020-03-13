@@ -1,20 +1,8 @@
-import React, { useEffect } from 'react'
-import { setStylesClass } from '../utilities/utilities'
+import React from 'react'
 
 const Content = props => {
-	const styles = {
-		fontSize: '16pt',
-		display: 'block',
-		minHeight: '100vh',
-		height: 'auto'
-	}
-
-	useEffect(() => {
-		setStylesClass('content', styles)
-	}, [])
-
 	return (
-		<div id={props.id} className='content'>
+		<div id={props.id} className='content content-detail'>
 			{props.children}
 		</div>
 	)

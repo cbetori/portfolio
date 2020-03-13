@@ -1,0 +1,7 @@
+.button {
+	font-family: 'Raleway', sans-serif;
+	display: inline-flex;
+	margin: auto;
+	font-size: x-large;
+	cursor: default;
+}

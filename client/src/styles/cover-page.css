@@ -1,0 +1,274 @@
+.cover-words {
+	display: flex;
+	color: whitesmoke;
+	font-size: 60pt;
+}
+
+#cover-full-wrap {
+	font-size: 64;
+	font-weight: bolder;
+}
+#cover-stack-wrap {
+	margin-left: 35vw;
+}
+
+#cover-dev-wrap {
+	display: table;
+	margin-left: 15vw;
+	margin-top: 35vh;
+	width: fit-content;
+}
+
+#cover-wrapper-2 {
+	position: absolute;
+	background-color: #00539cff;
+	height: 100vh;
+	width: 100%;
+	-webkit-clip-path: polygon(0 0, 1600px 0, 1600px 0.1%, 0 100%);
+	clip-path: polygon(140% 0, 0 0, 0 0, 0 100%);
+	-webkit-animation: slide-small-bluel 3s forwards;
+	-webkit-animation-delay: 3s;
+	animation: slide-small-blue 3s forwards;
+	animation-delay: 3s;
+}
+#cover-wrapper {
+	position: absolute;
+	background-color: #eea47fff;
+	height: 100vh;
+	width: 100%;
+	-webkit-clip-path: polygon(0 0, 1600px 0, 1600px 0.1%, 0 0);
+	clip-path: polygon(145% 0, 0 0, 0 0, 0 105%);
+	-webkit-animation: slide-small-orange 3s forwards;
+	-webkit-animation-delay: 6s;
+	animation: slide-small-orange 3s forwards;
+	animation-delay: 6s;
+}
+
+@keyframes slide-small-blue {
+	100% {
+		clip-path: polygon(8% 0, 0 0, 0 0, 0 8%);
+	}
+}
+
+@keyframes slide-small-orange {
+	100% {
+		clip-path: polygon(10% 0, 0 0, 0 0, 0 10%);
+	}
+}
+
+@-webkit-keyframes slide-small-blue {
+	100% {
+		clip-path: polygon(8% 0, 0 0, 0 0, 0 8%);
+	}
+}
+
+@-webkit-keyframes slide-small-orange {
+	100% {
+		clip-path: polygon(10% 0, 0 0, 0 0, 0 10%);
+	}
+}
+
+#cover-full-f {
+	margin-top: 15vw;
+	margin-left: -100vw;
+	-webkit-animation: full-f 3s forwards;
+	-webkit-animation-delay: 0s;
+	animation: full-f 3s forwards;
+	animation-delay: 0s;
+}
+
+@keyframes full-f {
+	100% {
+		margin-left: 35vw;
+	}
+}
+
+@-webkit-keyframes full-f {
+	100% {
+		margin-left: 35vw;
+	}
+}
+
+#cover-full-u {
+	margin-top: -100vw;
+	-webkit-animation: full-u 3s forwards;
+	-webkit-animation-delay: 0s;
+	animation: full-u 3s forwards;
+	animation-delay: 0s;
+}
+
+@keyframes full-u {
+	100% {
+		margin-top: 15vw;
+	}
+}
+
+@-webkit-keyframes full-u {
+	100% {
+		margin-top: 15vw;
+	}
+}
+
+#cover-full-ll {
+	margin-top: 15vw;
+	animation: full-ll ease 3s;
+	animation-delay: 0s;
+	-webkit-animation: full-ll ease 3s;
+	-webkit-animation-delay: 0s;
+}
+
+@keyframes full-ll {
+	0% {
+		opacity: 0;
+	}
+	70% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes full-ll {
+	0% {
+		opacity: 0;
+	}
+	70% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+#cover-stack {
+	margin-top: 100vh;
+	-webkit-animation: full-stack 3s forwards;
+	-webkit-animation-delay: 0s;
+	animation: full-stack 3s forwards;
+	animation-delay: 0s;
+}
+
+@keyframes full-stack {
+	100% {
+		margin-top: 0;
+	}
+}
+
+@-webkit-keyframes full-stack {
+	100% {
+		margin-top: 0;
+	}
+}
+
+#cover-dev {
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: 0.1em solid black; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: 0.1em; /* Adjust as needed */
+	-webkit-animation: typing 1.5s steps(40, end) blink-caret 0.5s step-end
+		infinite;
+	-webkit-animation-delay: 3.3;
+	animation: typing 1.5s steps(40, end), blink-caret 0.5s step-end infinite;
+	animation-delay: 3.3s;
+}
+
+/* The typing effect */
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: black;
+	}
+}
+
+@-webkit-keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: black;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#cover-dev-wrap {
+		display: table;
+		margin-left: 5vw;
+		margin-top: 35vh;
+		width: fit-content;
+	}
+
+	#cover-wrapper-2 {
+		position: absolute;
+		background-color: #00539cff;
+		height: 100vh;
+		width: 100%;
+		-webkit-clip-path: polygon(200% 0, 0 0, 0 0, 0 100%);
+		clip-path: polygon(200% 0, 0 0, 0 0, 0 100%);
+		-webkit-animation: slide-small-bluel 3s forwards;
+		-webkit-animation-delay: 3s;
+		animation: slide-small-blue 3s forwards;
+		animation-delay: 3s;
+	}
+	#cover-wrapper {
+		position: absolute;
+		background-color: #eea47fff;
+		height: 100vh;
+		width: 100%;
+		-webkit-clip-path: polygon(225% 0, 0 0, 0 0, 0 110%);
+		clip-path: polygon(225% 0, 0 0, 0 0, 0 110%);
+		-webkit-animation: slide-small-orange 3s forwards;
+		-webkit-animation-delay: 6s;
+		animation: slide-small-orange 3s forwards;
+		animation-delay: 6s;
+	}
+
+	@keyframes slide-small-blue {
+		100% {
+			clip-path: polygon(9% 0, 0 0, 0 0, 0 6%);
+		}
+	}
+
+	@keyframes slide-small-orange {
+		100% {
+			clip-path: polygon(12% 0, 0 0, 0 0, 0 8%);
+		}
+	}
+
+	@-webkit-keyframes slide-small-blue {
+		100% {
+			clip-path: polygon(8% 0, 0 0, 0 0, 0 5%);
+		}
+	}
+
+	@-webkit-keyframes slide-small-orange {
+		100% {
+			clip-path: polygon(6% 0, 0 0, 0 0, 0 6%);
+		}
+	}
+}
