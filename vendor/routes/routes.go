@@ -9,5 +9,5 @@ func Start(r *http.Request) string {
 }
 
 func Resume(r *http.Request) string {
-	return "./pdfs/resume.pdf"
+	return "./vendor/pdfs/resume.pdf"
 }
