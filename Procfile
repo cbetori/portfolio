@@ -1,1 +1,1 @@
-web: bin/vendor
+web: bin/portfolio

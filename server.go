@@ -22,7 +22,7 @@ func main() {
 	r.HandleFunc("/api/start", controller.Start).Methods("GET")
 	r.HandleFunc("/api/resume", controller.Resume).Methods("GET")
 
-	spa := spaHandler{staticPath: "../client/build", indexPath: "index.html"}
+	spa := spaHandler{staticPath: "./client/build", indexPath: "index.html"}
 	r.PathPrefix("/").Handler(spa)
 
 	//Start Server and Listen
