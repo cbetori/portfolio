@@ -1,5 +1,4 @@
 import React from 'react'
-import '../styles/images/linkedin.png'
 
 const Footer = () => {
 	return (

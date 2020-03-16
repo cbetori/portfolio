@@ -2,6 +2,9 @@ package routes
 
 import (
 	"net/http"
+	"os"
+
+	_ "github.com/joho/godotenv/autoload"
 )
 
 func Start(r *http.Request) string {
@@ -9,5 +12,6 @@ func Start(r *http.Request) string {
 }
 
 func Resume(r *http.Request) string {
-	return "./vendor/pdfs/resume.pdf"
+	return string(os.Getenv("RESUME"))
+
 }

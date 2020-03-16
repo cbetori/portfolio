@@ -12,7 +12,6 @@ func Start(w http.ResponseWriter, r *http.Request) {
 }
 
 func Resume(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content-Type", "application/pdf")
 	x := routes.Resume(r)
-	http.ServeFile(w, r, x)
+	fmt.Fprintf(w, x)
 }

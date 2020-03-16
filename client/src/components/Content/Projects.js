@@ -1,29 +1,8 @@
-import React, { useEffect } from 'react'
-import { setStylesClass } from '../../utilities/utilities'
+import React from 'react'
 import Content from '../Content'
 import Header from '../Content/Header'
 
 const Projects = props => {
-	const stylesProjectWrap = {
-		display: 'flex',
-		justifyContent: 'center',
-		flexDirection: 'column',
-		marginTop: '25px',
-	}
-
-	const stylesProject = {
-		position: 'relative',
-		margin: 'auto',
-		marginBottom: '50px',
-	}
-
-	const stylesProjectHeader = {
-		textAlign: 'center',
-		fontWeight: 'bold',
-		fontSize: '20pt',
-		marginBottom: '20px',
-	}
-
 	const projects = {
 		db: {
 			purpose:
@@ -38,43 +17,10 @@ const Projects = props => {
 		},
 	}
 
-	const stylesProjectDetailWrap = {
-		background: 'rgb(68,72,87,.1)',
-		margin: 'auto',
-		marginLeft: 'auto',
-		marginRight: 'auto',
-		marginTop: '30px',
-		padding: '15px',
-		borderRadius: '8px',
-		width: '75%',
-	}
-
-	const stylesProjectDetail = {
-		marginTop: '10px',
-		marginBottom: '20px',
-		marginLeft: '15px',
-	}
-
-	const stylesProjectDetailHead = {
-		color: 'black',
-		textDecoration: 'none',
-		fontWeight: 'bold',
-		margin: '5px',
-	}
-
-	useEffect(() => {
-		setStylesClass('project-wrapper', stylesProjectWrap)
-		setStylesClass('project', stylesProject)
-		setStylesClass('project-header', stylesProjectHeader)
-		setStylesClass('project-detail-wrapper', stylesProjectDetailWrap)
-		setStylesClass('project-detail', stylesProjectDetail)
-		setStylesClass('project-detail-header', stylesProjectDetailHead)
-	}, [])
-
 	return (
 		<Content id='projects'>
 			<Header id value='PROJECTS' />
-			{/* <div className='project-wrapper'> */}
+
 			<div className='project'>
 				<div className='project-header project-header-grid'>
 					Investor Dashboard
@@ -108,7 +54,6 @@ const Projects = props => {
 					</a>
 				</div>
 			</div>
-			{/* </div> */}
 		</Content>
 	)
 }
