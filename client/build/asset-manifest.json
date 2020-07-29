@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.e779b866.chunk.css",
-    "main.js": "/static/js/main.699596c0.chunk.js",
-    "main.js.map": "/static/js/main.699596c0.chunk.js.map",
+    "main.css": "/static/css/main.18980910.chunk.css",
+    "main.js": "/static/js/main.0611be5e.chunk.js",
+    "main.js.map": "/static/js/main.0611be5e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c70048c8.js",
     "runtime-main.js.map": "/static/js/runtime-main.c70048c8.js.map",
     "static/js/2.03e8f13d.chunk.js": "/static/js/2.03e8f13d.chunk.js",
     "static/js/2.03e8f13d.chunk.js.map": "/static/js/2.03e8f13d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.2bd5d027e79af4ea9c083abcede0a4a3.js": "/precache-manifest.2bd5d027e79af4ea9c083abcede0a4a3.js",
+    "precache-manifest.131f8c48ec1b7cc9647176a3bc857e88.js": "/precache-manifest.131f8c48ec1b7cc9647176a3bc857e88.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.e779b866.chunk.css.map": "/static/css/main.e779b866.chunk.css.map",
+    "static/css/main.18980910.chunk.css.map": "/static/css/main.18980910.chunk.css.map",
     "static/js/2.03e8f13d.chunk.js.LICENSE.txt": "/static/js/2.03e8f13d.chunk.js.LICENSE.txt",
     "static/media/education.css": "/static/media/eds.c454635d.jpg",
     "static/media/projects.css": "/static/media/pdfmerger.9a686d73.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.c70048c8.js",
     "static/js/2.03e8f13d.chunk.js",
-    "static/css/main.e779b866.chunk.css",
-    "static/js/main.699596c0.chunk.js"
+    "static/css/main.18980910.chunk.css",
+    "static/js/main.0611be5e.chunk.js"
   ]
 }
