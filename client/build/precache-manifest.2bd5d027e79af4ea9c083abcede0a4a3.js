@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1db337a6a342a328f8ecdf54fa8d343e",
+    "revision": "b419a737890d93ccde102c10b084f23d",
     "url": "/index.html"
   },
   {
-    "revision": "6984bcc242f84770f530",
-    "url": "/static/css/main.1bf8de5c.chunk.css"
+    "revision": "68bee8426e1dc9a536da",
+    "url": "/static/css/main.e779b866.chunk.css"
   },
   {
-    "revision": "0f4d6c823240e55c61ff",
-    "url": "/static/js/2.7245b878.chunk.js"
+    "revision": "72ba1182219aa49d7b8b",
+    "url": "/static/js/2.03e8f13d.chunk.js"
   },
   {
     "revision": "5356fa2f66e46e6c05e4cbe319ac7f1d",
-    "url": "/static/js/2.7245b878.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.03e8f13d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6984bcc242f84770f530",
-    "url": "/static/js/main.be92f203.chunk.js"
+    "revision": "68bee8426e1dc9a536da",
+    "url": "/static/js/main.699596c0.chunk.js"
   },
   {
     "revision": "a27870e5f03a3425f6aa",
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/aca.5b7f649e.png"
   },
   {
-    "revision": "2edce7ba858ca92fc9926cfa897f2d19",
-    "url": "/static/media/class.2edce7ba.jpg"
+    "revision": "e2f5165004756bc57ae2c7f913c96c88",
+    "url": "/static/media/covid.e2f51650.png"
   },
   {
     "revision": "7a6f7cb9267f7ac61b46ab9a901d6954",
@@ -40,16 +40,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/eds.c454635d.jpg"
   },
   {
-    "revision": "9b3334ebcd63610af8b447fa30ac5901",
-    "url": "/static/media/insta.9b3334eb.png"
+    "revision": "26343e0a5e29e4164dfdd1674e75a6ef",
+    "url": "/static/media/git-white.26343e0a.png"
   },
   {
-    "revision": "4e9c86d338ff516f516f62e1d20478c2",
-    "url": "/static/media/lin.4e9c86d3.png"
-  },
-  {
-    "revision": "d142adfc9e4314d861e00ad212e2554b",
-    "url": "/static/media/linkedin.d142adfc.png"
+    "revision": "40bd438cc39a070a3bbf0acfde7f7b71",
+    "url": "/static/media/insta-white.40bd438c.png"
   },
   {
     "revision": "ba2148ae2c9d59e2e2c466a3352bd78f",
