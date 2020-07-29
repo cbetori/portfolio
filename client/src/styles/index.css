@@ -1,5 +1,9 @@
+html,
 body {
 	overflow-x: hidden;
+	position: relative;
+	width: 100%;
+	-webkit-overflow-scrolling: touch;
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -12,10 +16,10 @@ code {
 }
 
 #root {
+	overflow-x: hidden;
 	--header-color: rgba(250, 250, 250, 0.93);
 	--footer-color: rgb(68, 72, 87);
 	--block-color: green;
-	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
@@ -32,12 +36,17 @@ code {
 .header {
 	grid-area: header;
 	z-index: 100;
+	overflow-x: hidden;
 }
 
 .body {
 	grid-area: layout;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
 }
 
 .footer {
 	grid-area: footer;
+	overflow-x: hidden;
 }

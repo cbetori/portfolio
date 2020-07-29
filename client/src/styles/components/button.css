@@ -5,3 +5,9 @@
 	font-size: x-large;
 	cursor: default;
 }
+
+@media only screen and (max-width: 600px) {
+	.button {
+		font-size: large;
+	}
+}

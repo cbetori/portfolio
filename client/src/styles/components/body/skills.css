@@ -161,3 +161,76 @@
 	margin-top: 10px;
 	height: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+	#js-pic {
+		background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+		margin-top: 300px;
+		margin-left: 80px;
+		width: 120px;
+		height: 120px;
+		z-index: -1;
+	}
+
+	#node-pic {
+		background-image: url('https://colorlib.com/wp/wp-content/uploads/sites/2/node.js-logo.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: left;
+		position: absolute;
+		margin-top: 250px;
+		width: 50%;
+		height: 150px;
+		z-index: -1;
+	}
+
+	#go-pic {
+		background-image: url('https://i.ya-webdesign.com/images/golang-vector-5.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-top: 250px;
+		width: 50%;
+		height: 150px;
+		z-index: -1;
+	}
+
+	#sql-pic {
+		background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: absolute;
+		background-position: left;
+		overflow: hidden;
+		margin-top: 260px;
+		margin-left: 50px;
+		width: inherit;
+		height: 180px;
+		z-index: -1;
+	}
+
+	#vba-pic {
+		background-image: url('https://i0.wp.com/beatexcel.com/wp-content/uploads/2013/07/vba-logo.png?resize=572%2C217');
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: absolute;
+		margin-top: 250px;
+		width: 60%;
+		height: 100px;
+		z-index: -1;
+	}
+
+	#deploy-pic {
+		background-image: url('https://image.flaticon.com/icons/svg/25/25231.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: left;
+		position: absolute;
+		width: inherit;
+		margin-top: 250px;
+		height: 200px;
+		z-index: -1;
+	}
+}
