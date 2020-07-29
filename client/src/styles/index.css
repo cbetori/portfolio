@@ -1,7 +1,7 @@
 html,
 body {
 	overflow-x: hidden;
-	width: auto;
+	width: 100%;
 	-webkit-overflow-scrolling: touch;
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
