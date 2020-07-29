@@ -35,12 +35,16 @@ code {
 .header {
 	grid-area: header;
 	z-index: 100;
+	overflow-x: hidden;
 }
 
 .body {
 	grid-area: layout;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 .footer {
 	grid-area: footer;
+	overflow-x: hidden;
 }
