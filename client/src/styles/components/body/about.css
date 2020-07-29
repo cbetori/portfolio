@@ -1,0 +1,175 @@
+#about {
+	background-image: url('../../images/mountain.jpg');
+	background-size: cover;
+	background-position-x: center;
+	background-repeat: no-repeat;
+	height: calc(var(--vh, 1vh) * 100);
+}
+
+.about-card {
+	display: flex;
+	flex-wrap: wrap;
+	color: grey;
+	justify-content: center;
+	width: 100%;
+}
+.about-card-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: auto;
+}
+
+.about-card-resume {
+	font-size: 16pt;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+	cursor: pointer;
+	width: 250px;
+	height: 50px;
+	border: 1px solid grey;
+	margin-bottom: 0.5rem;
+	animation-name: fade-in;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	margin-top: 200px;
+}
+
+.about-card-resume-footer {
+	font-size: 16pt;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+	cursor: pointer;
+	width: 250px;
+	height: 50px;
+	border: 1px solid white;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.about-card-resume-footer:hover {
+	background-color: white;
+	color: #4e7ad9;
+}
+
+.about-card-more {
+	cursor: pointer;
+	padding: 10px;
+	font-size: 12pt;
+	font-style: italic;
+	text-align: center;
+	animation-name: bounce;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+.about-card-more:hover {
+	animation-name: bounce-1;
+	animation-delay: 0.2s;
+}
+
+@keyframes bounce {
+	0% {
+		transform: scale(1, 1) translateY(0px);
+	}
+	10% {
+		transform: scale(1.1, 0.9) translateY(-1px);
+	}
+	20% {
+		transform: scale(0.9, 1.1) translateY(-2px);
+	}
+	30% {
+		transform: scale(1, 1) translateY(-3px);
+	}
+	40% {
+		transform: scale(1, 1) translateY(-2px);
+	}
+	50% {
+		transform: scale(1, 1) translateY(-1px);
+	}
+	60% {
+		transform: scale(1, 1) translateY(0px);
+	}
+	70% {
+		transform: scale(1, 1) translateY(1px);
+	}
+	80% {
+		transform: scale(1, 1) translateY(2px);
+	}
+	90% {
+		transform: scale(1, 1) translateY(1px);
+	}
+	100% {
+		transform: scale(1, 1) translateY(0px);
+	}
+}
+
+@keyframes bounce-1 {
+	0% {
+		transform: scale(1, 1) translateY(0px);
+	}
+	10% {
+		transform: scale(1.1, 0.9) translateY(-1px);
+	}
+	20% {
+		transform: scale(0.9, 1.1) translateY(-2px);
+	}
+	30% {
+		transform: scale(1, 1) translateY(-3px);
+	}
+	40% {
+		transform: scale(1, 1) translateY(-2px);
+	}
+	50% {
+		transform: scale(1, 1) translateY(-1px);
+	}
+	60% {
+		transform: scale(1, 1) translateY(0px);
+	}
+	70% {
+		transform: scale(1, 1) translateY(1px);
+	}
+	80% {
+		transform: scale(1, 1) translateY(2px);
+	}
+	90% {
+		transform: scale(1, 1) translateY(1px);
+	}
+	100% {
+		transform: scale(1, 1) translateY(0px);
+	}
+}
+
+.about-more {
+	background-color: rgb(68, 72, 87, 0.75);
+	border-radius: 5px;
+	color: white;
+	display: flex;
+	top: 110px;
+	flex-direction: column;
+	justify-content: center;
+	padding: 25px;
+	margin: 50px;
+	margin-bottom: 0px;
+	animation-name: fade-in;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.about-more-block {
+	font-size: 12pt;
+	font-style: italic;
+	text-align: center;
+}

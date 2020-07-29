@@ -1,0 +1,7 @@
+.button {
+	font-weight: bolder;
+	display: inline-flex;
+	margin: auto;
+	font-size: x-large;
+	cursor: default;
+}

@@ -27,7 +27,7 @@ const Header = () => {
 				<Button onClick={() => handleClick('projects')} value='Projects' />
 				<Button onClick={() => handleClick('skills')} value='Skill Set' />
 				<Button onClick={() => handleClick('education')} value='Education' />
-				<Button onClick={() => handleResume()} value='Resume'></Button>
+				{/* <Button onClick={() => handleResume()} value='Resume'></Button> */}
 			</div>
 		</div>
 	)
