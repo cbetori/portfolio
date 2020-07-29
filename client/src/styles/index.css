@@ -1,8 +1,7 @@
 html,
 body {
 	overflow-x: hidden;
-	position: relative;
-	width: 100%;
+	width: auto;
 	-webkit-overflow-scrolling: touch;
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
@@ -36,17 +35,12 @@ code {
 .header {
 	grid-area: header;
 	z-index: 100;
-	overflow-x: hidden;
 }
 
 .body {
 	grid-area: layout;
-	display: flex;
-	flex-direction: column;
-	overflow-x: hidden;
 }
 
 .footer {
 	grid-area: footer;
-	overflow-x: hidden;
 }
