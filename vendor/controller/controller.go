@@ -15,3 +15,8 @@ func Resume(w http.ResponseWriter, r *http.Request) {
 	x := routes.Resume(r)
 	fmt.Fprintf(w, x)
 }
+
+func APK(w http.ResponseWriter, r *http.Request) {
+	x := routes.APK(r)
+	fmt.Fprintf(w, x)
+}

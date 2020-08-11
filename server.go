@@ -21,6 +21,7 @@ func main() {
 
 	r.HandleFunc("/api/start", controller.Start).Methods("GET")
 	r.HandleFunc("/api/resume", controller.Resume).Methods("GET")
+	r.HandleFunc("/api/apk", controller.APK).Methods("GET")
 
 	spa := spaHandler{staticPath: "client/build", indexPath: "index.html"}
 	r.PathPrefix("/").Handler(spa)

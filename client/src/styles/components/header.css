@@ -8,5 +8,14 @@
 	justify-content: space-around;
 	position: fixed;
 	width: 100%;
-	font-size: 10pt;
+}
+
+#headerbtn {
+	font-size: 100pt !important;
+}
+
+@media only screen and (max-width: 600px) {
+	.header {
+		font-size: 10pt;
+	}
 }

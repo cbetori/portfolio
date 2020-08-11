@@ -15,3 +15,8 @@ func Resume(r *http.Request) string {
 	return string(os.Getenv("RESUME"))
 
 }
+
+func APK(r *http.Request) string {
+	return string(os.Getenv("APK"))
+
+}

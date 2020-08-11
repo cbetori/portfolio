@@ -105,6 +105,7 @@
 }
 
 .skills-column {
+	font-size: 16pt;
 	height: 440px;
 	z-index: 1;
 	margin: 10px;
@@ -121,7 +122,7 @@
 .skills-header {
 	padding: 5px;
 	display: flex;
-	font-size: 18pt;
+	font-size: 24pt;
 	font-weight: bold;
 	justify-content: center;
 	border-bottom: solid 3px whitesmoke;
@@ -232,5 +233,14 @@
 		margin-top: 250px;
 		height: 200px;
 		z-index: -1;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.skills-header {
+		font-size: 18pt;
+	}
+	.skills-column {
+		font-size: 12pt;
 	}
 }

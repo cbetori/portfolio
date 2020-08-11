@@ -3,6 +3,12 @@ import SectionHead from './Other/SectionHead'
 
 const Projects = (props) => {
 	const projects = {
+		cleanDrawer: {
+			purpose:
+				'Android application that automatically categorizes apps by the category they are listed in the Google Play Store. User can also create their own app categories, add or remove apps, and rearrange both apps and categories.',
+			stack: 'React Native, React Draggable Lists, Java',
+			link: () => handleAPK(),
+		},
 		covid: {
 			purpose: 'Website providing Covid-19 data. ',
 			stack: 'React, React-Virtualized, GoLang',
@@ -22,10 +28,41 @@ const Projects = (props) => {
 		},
 	}
 
+	let handleAPK = () => {
+		fetch('/api/apk', {
+			method: 'GET',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+		})
+			.then((res) => {
+				return res.json()
+			})
+			.then((result) => window.open(result.apk))
+	}
+
 	return (
 		<div id='projects' className='content-wrapper'>
 			<SectionHead value='PROJECTS' />
 			<div className='content-detail'>
+				<div className='project section-wrapper'>
+					<div className='project-header project-header-grid'>Clean Drawer</div>
+					<div id='project-cleandrawer' className='project-image' />
+					<div className='project-detail-wrapper'>
+						<div className='project-detail-header'>Summary</div>
+						<div className='project-detail'>{projects.cleanDrawer.purpose}</div>
+						<div className='project-detail-header'>Stack</div>
+						<div className='project-detail'>{projects.cleanDrawer.stack}</div>
+						<div
+							className='project-detail-header project-detail-link'
+							onClick={() => {
+								projects.cleanDrawer.link()
+							}}
+						>
+							Link
+						</div>
+					</div>
+				</div>
 				<div className='project section-wrapper'>
 					<div className='project-header project-header-grid'>
 						Covid-19 Tracker
@@ -34,7 +71,6 @@ const Projects = (props) => {
 					<div className='project-detail-wrapper'>
 						<div className='project-detail-header'>Summary</div>
 						<div className='project-detail'>{projects.covid.purpose}</div>
-
 						<div className='project-detail-header'>Stack</div>
 						<div className='project-detail'>{projects.covid.stack}</div>
 						<a className='project-detail-header' href={projects.covid.link}>

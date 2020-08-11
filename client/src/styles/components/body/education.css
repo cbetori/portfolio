@@ -1,4 +1,5 @@
 .education-grid {
+	font-size: 18pt;
 	display: grid;
 	gap: 1rem;
 	row-gap: 5rem;
@@ -56,7 +57,7 @@
 }
 
 .edu-title {
-	font-size: 18pt;
+	font-size: 24pt;
 	font-weight: bold;
 	margin-bottom: 10px;
 }
@@ -70,5 +71,11 @@
 
 	.eds {
 		background-image: none;
+	}
+	.edu-title {
+		font-size: 18pt;
+	}
+	.education-grid {
+		font-size: 12pt;
 	}
 }
