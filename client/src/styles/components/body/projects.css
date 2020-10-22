@@ -9,6 +9,7 @@
 	background-size: contain;
 	background-position: left top;
 	border-radius: 2px;
+	cursor: pointer;
 	padding-top: 59.15%;
 	width: 100%;
 	height: 0;
@@ -43,6 +44,17 @@
 	background-position: left top;
 	border-radius: 2px;
 	padding-top: 36.3929147%;
+	width: 100%;
+	height: 0;
+}
+
+#project-amazon {
+	background-image: url('../../images/projects/amazon.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left top;
+	border-radius: 2px;
+	padding-top: 74.63%;
 	width: 100%;
 	height: 0;
 }

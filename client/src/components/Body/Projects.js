@@ -3,6 +3,11 @@ import SectionHead from './Other/SectionHead'
 
 const Projects = (props) => {
 	const projects = {
+		amazon: {
+			purpose: 'Amazon clone website.',
+			stack: 'React, AWS',
+			link: 'http://cbetori.com.s3-website.us-east-2.amazonaws.com/',
+		},
 		cleanDrawer: {
 			purpose:
 				'Android application that automatically categorizes apps by the category they are listed in the Google Play Store. User can also create their own app categories, add or remove apps, and rearrange both apps and categories.',
@@ -46,8 +51,32 @@ const Projects = (props) => {
 			<SectionHead value='PROJECTS' />
 			<div className='content-detail'>
 				<div className='project section-wrapper'>
+					<div className='project-header project-header-grid'>Amazon Clone</div>
+					<a
+						id='project-amazon'
+						className='project-image'
+						href={projects.amazon.link}
+					/>
+					<div className='project-detail-wrapper'>
+						<div className='project-detail-header'>Summary</div>
+						<div className='project-detail'>{projects.amazon.purpose}</div>
+						<div className='project-detail-header'>Stack</div>
+						<div className='project-detail'>{projects.amazon.stack}</div>
+						<a className='project-detail-header' href={projects.amazon.link}>
+							Link
+						</a>
+					</div>
+				</div>
+
+				<div className='project section-wrapper'>
 					<div className='project-header project-header-grid'>Clean Drawer</div>
-					<div id='project-cleandrawer' className='project-image' />
+					<div
+						id='project-cleandrawer'
+						className='project-image'
+						onClick={() => {
+							projects.cleanDrawer.link()
+						}}
+					/>
 					<div className='project-detail-wrapper'>
 						<div className='project-detail-header'>Summary</div>
 						<div className='project-detail'>{projects.cleanDrawer.purpose}</div>
@@ -67,7 +96,11 @@ const Projects = (props) => {
 					<div className='project-header project-header-grid'>
 						Covid-19 Tracker
 					</div>
-					<div id='project-covid' className='project-image' />
+					<a
+						id='project-covid'
+						className='project-image'
+						href={projects.covid.link}
+					/>
 					<div className='project-detail-wrapper'>
 						<div className='project-detail-header'>Summary</div>
 						<div className='project-detail'>{projects.covid.purpose}</div>
@@ -82,7 +115,11 @@ const Projects = (props) => {
 					<div className='project-header project-header-grid'>
 						Investor Dashboard
 					</div>
-					<div id='project-db' className='project-image' />
+					<a
+						id='project-db'
+						className='project-image'
+						href={projects.db.link}
+					/>
 					<div className='project-detail-wrapper'>
 						<div className='project-detail-header'>Summary</div>
 						<div className='project-detail'>{projects.db.purpose}</div>
@@ -96,7 +133,11 @@ const Projects = (props) => {
 				</div>
 				<div className='project'>
 					<div className='project-header project-header-grid'>PDF Merger</div>
-					<div id='project-pdf' className='project-image project-image' />
+					<a
+						id='project-pdf'
+						className='project-image'
+						href={projects.pdf.link}
+					/>
 					<div className='project-detail-wrapper'>
 						<div className='project-detail-header'>Summary</div>
 						<div className='project-detail'>{projects.pdf.purpose}</div>
