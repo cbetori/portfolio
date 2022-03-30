@@ -67,5 +67,10 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: './public/index.html',
     }),
+    new web.DefinePlugin({
+      API_URL: prod
+        ? JSON.stringify(process.env.API_URL)
+        : JSON.stringify(dotenv.API_URL),
+    }),
   ],
 }
