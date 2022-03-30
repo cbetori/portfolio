@@ -67,10 +67,10 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: './public/index.html',
     }),
-    !prod ??
+    ...(!prod ??
       new MFLiveReloadPlugin({
         container: 'portfolio',
         port: 8080,
-      }),
+      })),
   ],
 }
