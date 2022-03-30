@@ -8,6 +8,7 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 	_ "github.com/joho/godotenv/autoload"
 )
@@ -19,16 +20,26 @@ func main() {
 	// Set port/company name from env file
 	port := os.Getenv("PORT")
 
+	portfolio_host := "https://portfolio-host-nu.vercel.app"
+
+	headersOk := handlers.AllowedHeaders([]string{"X-Requested-With"})
+	methodsOk := handlers.AllowedMethods([]string{"GET", "HEAD", "POST", "PUT", "OPTIONS"})
+	originsOk := handlers.AllowedOrigins([]string{portfolio_host})
+
+	if os.Getenv("NODE_ENV") == "development" {
+		originsOk = handlers.AllowedOrigins([]string{"*"})
+	}
+
 	r.HandleFunc("/api/start", controller.Start).Methods("GET")
 	r.HandleFunc("/api/resume", controller.Resume).Methods("GET")
 	r.HandleFunc("/api/apk", controller.APK).Methods("GET")
 
-	spa := spaHandler{staticPath: "client/build", indexPath: "index.html"}
+	spa := spaHandler{staticPath: "client/dist", indexPath: "index.html"}
 	r.PathPrefix("/").Handler(spa)
 
 	//Start Server and Listen
-	log.Fatal(http.ListenAndServe(":"+port, r))
-	fmt.Println("Server Running!")
+	fmt.Println("Server Running On Port:", port)
+	log.Fatal(http.ListenAndServe(":"+port, handlers.CORS(originsOk, headersOk, methodsOk)(r)))
 }
 
 type spaHandler struct {
