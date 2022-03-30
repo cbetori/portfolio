@@ -1,50 +1,57 @@
 html,
 body {
-	overflow-x: hidden;
-	width: 100%;
-	-webkit-overflow-scrolling: touch;
-	margin: 0;
-	font-family: 'Roboto', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
 #root {
-	overflow-x: hidden;
-	--header-color: rgba(250, 250, 250, 0.93);
-	--footer-color: rgb(68, 72, 87);
-	--block-color: green;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
-	grid-template-areas:
-		'header'
-		'layout'
-		'footer';
+  overflow-x: hidden;
+  --header-color: rgba(250, 250, 250, 0.93);
+  --footer-color: rgb(68, 72, 87);
+  --block-color: green;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-areas:
+    'header'
+    'layout'
+    'footer';
 }
 
 #cover-page {
-	grid-area: layout;
+  grid-area: layout;
 }
 
 .header {
-	grid-area: header;
-	z-index: 100;
-	overflow-x: hidden;
+  grid-area: header;
+  z-index: 100;
+  overflow-x: hidden;
 }
 
 .body {
-	grid-area: layout;
-	width: 100%;
-	overflow-x: hidden;
+  height: auto;
+  grid-area: layout;
+  width: 100%;
 }
 
 .footer {
-	grid-area: footer;
-	overflow-x: hidden;
+  width: 100%;
+  grid-area: footer;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }

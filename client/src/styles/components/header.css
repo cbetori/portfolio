@@ -1,21 +1,23 @@
 .header {
-	font-weight: bolder;
-	background: var(--header-color);
-	color: black;
-	display: flex;
-	height: 100px;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	position: fixed;
-	width: 100%;
+  font-weight: bolder;
+  background: var(--header-color);
+  color: black;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* position: absolute; */
+  /* background-color: transparent; */
+  width: inherit;
 }
 
 #headerbtn {
-	font-size: 100pt !important;
+  font-size: 100pt !important;
 }
 
 @media only screen and (max-width: 600px) {
-	.header {
-		font-size: 10pt;
-	}
+  .header {
+    font-size: 10pt;
+  }
 }
