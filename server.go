@@ -22,7 +22,7 @@ func main() {
 
 	portfolio_host := "https://portfolio-host-nu.vercel.app"
 
-	headersOk := handlers.AllowedHeaders([]string{"X-Requested-With"})
+	headersOk := handlers.AllowedHeaders([]string{"Accept", "application/json", "Content-Type", "Content-Length", "Accept-Encoding", "Authorization", "X-CSRF-Token", "X-Requested-With"})
 	methodsOk := handlers.AllowedMethods([]string{"GET", "HEAD", "POST", "PUT", "OPTIONS"})
 	originsOk := handlers.AllowedOrigins([]string{portfolio_host})
 
