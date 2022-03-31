@@ -1,6 +1,7 @@
 import React from 'react'
 const Resume = props => {
   let handleResume = () => {
+    console.log(API_URL)
     fetch(API_URL + '/api/resume', {
       method: 'GET',
       headers: {

@@ -1,10 +1,9 @@
 const { ModuleFederationPlugin } = require('webpack').container
 const { MFLiveReloadPlugin } = require('@module-federation/fmr')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
-const web = require('webpack')
 const path = require('path')
 const deps = require('./package.json').dependencies
-
+const web = require('webpack')
 const mode = process.env.NODE_ENV || 'development'
 const prod = mode === 'production'
 
