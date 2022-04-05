@@ -55,7 +55,7 @@ module.exports = {
       filename: 'remoteEntry.js',
       exposes: {
         './Portfolio': './src/App.js',
-        './ResumeBtn': './src/components/Body/Other/Resume.js',
+        // './ResumeBtn': './src/components/Body/Other/Resume.js',
       },
       shared: {
         react: {
@@ -76,5 +76,9 @@ module.exports = {
         ? JSON.stringify(process.env.API_URL)
         : JSON.stringify(dotenv.API_URL),
     }),
+    // new MFLiveReloadPlugin({
+    //   container: 'portfolio',
+    //   port: 8080,
+    // }),
   ],
 }
