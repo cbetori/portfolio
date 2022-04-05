@@ -6,6 +6,9 @@ const deps = require('./package.json').dependencies
 const web = require('webpack')
 const mode = process.env.NODE_ENV || 'development'
 const prod = mode === 'production'
+const dotenv = require('dotenv').config({
+  path: '../.env',
+}).parsed
 
 module.exports = {
   entry: './src/index.js',
@@ -52,6 +55,7 @@ module.exports = {
       filename: 'remoteEntry.js',
       exposes: {
         './Portfolio': './src/App.js',
+        './ResumeBtn': './src/components/Body/Other/Resume.js',
       },
       shared: {
         react: {

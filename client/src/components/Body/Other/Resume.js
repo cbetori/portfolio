@@ -19,6 +19,7 @@ const Resume = props => {
       key='default-resume'
       id={props.id}
       className={props.className}
+      style={{ ...props.style }}
       onClick={() => handleResume()}>
       DOWNLOAD RESUME
     </div>
